@@ -1,0 +1,130 @@
+/*aqui dare una limpieza de estilos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+}
+/*aqui termina mi limpieza de estilos*/
+
+
+/*******************estilos del body***********/
+
+body{
+    color: #ffffff;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    background-image: repeating-linear-gradient(275deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(230deg, rgb(31,59,67),hsl(266,74%,56%),hsl(338, 89%, 48%),hsl(50,74%,56%),hsl(122,74%,56%));
+}
+
+/***estilos del header***/
+header{
+    width: 100vw;
+   
+}
+
+.cont_padre{
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    color:bisque;
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+span{
+    color: aquamarine;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#mi_h2{
+    font-size:2rem;
+    color:aquamarine;
+    margin-top: -37px;
+    margin-left:23px ;
+
+}
+
+/***aqui hago los cuadros del sobre mi***/
+.sect_header{
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+   margin: 30px 30px;
+   font-size: 2rem;
+   background-color:darkslateblue;
+   border: 5px solid white;
+}
+.sect_header:hover{
+    transition: 1s;
+    background-color:black;
+    color:cornflowerblue;
+}
+
+/********aqui finaliza*******/
+
+/****seguimos con el header**/
+span, h1{
+    transition: 1s;
+    font-size: 30px;
+    letter-spacing: normal;
+    margin-top: 20px;
+}
+
+h1,span:hover{
+
+    letter-spacing: .5em;
+    cursor: pointer;
+}
+/*****la parte responsiva*****/
+@media (min-width:100px) and (max-width: 575.98px) {
+    #mi_h2{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    
+}
+
+@media (min-width:575.98) and (max-width: 767.98px) {  
+  
+    #mi_h2{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+}
+
+
+@media(min-width: 767.98px) and (max-width: 991.98px) { 
+    #mi_h2{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+}
+
+
+@media(min-width: 991.98px)  and (max-width: 1199.98px) {  
+
+}
+
+
+@media(min-width: 1199.98px) and (max-width: 1399.98px) { 
+
+
+}

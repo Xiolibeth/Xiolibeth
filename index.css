@@ -1,0 +1,325 @@
+/*aqui dare una limpieza de estilos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+}
+/*aqui termina mi limpieza de estilos*/
+
+
+/*****************************************/
+
+
+/*******************estilos del body***********/
+
+body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    border: 8px solid #ffffff;  
+    color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    background-image: repeating-linear-gradient(275deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(230deg, rgb(31,59,67),hsl(266,74%,56%),hsl(338, 89%, 48%),hsl(50,74%,56%),hsl(122,74%,56%));
+}
+
+
+
+/*******************estilos del header**********/
+
+header{
+    width: 100vw;
+   
+}
+
+.cont_padre{
+    width: 100%;
+    height: 100%;
+    
+}
+
+h1{
+    color:bisque;
+    margin-left: 20px;
+}
+
+#span_titulo{
+    color: aquamarine;
+}
+.navegacion_lista_header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.lista_header{
+    margin: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 800;
+    font-size: 20px; 
+}
+
+.lista_header li:hover{
+    transition: 1s;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color:aquamarine;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+
+#span_titulo, h1{
+    transition: 1s;
+    font-size: 30px;
+    letter-spacing: normal;
+    margin-top: 20px;
+}
+
+h1,#span_titulo:hover{
+
+    letter-spacing: .5em;
+    cursor: pointer;
+}
+
+.mi_foto{
+    width: 50%;
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   margin-top: 5rem;
+   text-align: center;
+
+}
+
+
+.mi_foto img{
+    background: #203A43;
+    border: 5px solid #c6d4e1;
+    margin: auto;
+    margin-bottom: 10px;
+    
+}
+
+h2{
+    color:aquamarine;
+    font-size: 3rem;
+}
+
+a{
+    color:#ffffff;
+}
+
+header a:hover{
+    color: black;
+}
+
+.mi_parrafo{
+   display: inline-block;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   margin-bottom: 50px;
+   color:aquamarine;
+   font-size: 1.5rem;
+}
+/*********** estilos del footer**************/
+
+footer{
+    width: 100vw;
+
+}
+
+.mi_lista_footer{
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.mi_lista_footer ul{
+    width: 50%;
+    display: flex;
+}
+
+.item_lista_footer{
+    margin-top: 5px;
+
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+  width: 30%;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+
+}
+
+
+button{
+    transition:1s;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color:aquamarine;
+    border-radius: 30px;
+    width:20% ;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.email{
+    color: #000;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+    font-size: 30px;
+    letter-spacing: normal;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color:aquamarine;
+    border-radius: 30px;
+    width:80% ;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.email:hover{
+    background:cornflowerblue;
+    color: #ffffff;
+    letter-spacing: .5em;
+    cursor: pointer;
+}
+/**los estilos del onload****/
+
+
+
+/**estilos de los iconos***/
+
+.iconos_footer{
+   display: flex;
+   justify-content: center;
+   margin-top: 25px;
+   margin-bottom: 20px;
+
+}
+
+i{
+    margin-left: 20px;
+
+}
+
+/******************* las @medias **************/
+
+
+@media (min-width:100px) and (max-width: 575.98px) {
+
+    footer{
+        min-height: 30vh;
+    }
+    .navegacion_lista_header{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .lista_header{
+        flex-direction: column;
+        
+    }
+    img{
+        width: 200px;
+    }
+    .mi_parrafo, h2{
+        font-size: 16px;
+        text-align: center;
+        margin: 10px;
+    }
+    .cont_padre{
+        border: none;
+    }
+    
+    li{
+        margin: 5px;
+    }
+    
+    .email{
+        width:90%;
+        margin: auto;
+    }
+    
+    
+}
+
+@media (min-width:575.98) and (max-width: 767.98px) {  
+    
+
+    .navegacion_lista_header{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .lista_header{
+        flex-direction: column;
+        
+    }
+    img{
+        width: 350px;
+    }
+    .mi_parrafo, h2{
+        font-size: 16px;
+        text-align: center;
+        margin: 10px;
+    }
+    .cont_padre{
+        border: none;
+    }
+    .email{
+        width:90%;
+        margin: auto;
+    }
+    
+}
+
+
+@media(min-width: 767.98px) and (max-width: 991.98px) { 
+
+    footer{
+        font-size: 1.5rem;
+        min-height: 38.9vh;
+    }
+    .email{
+        width:90%;
+        margin: auto;
+    }
+
+}
+
+
+@media(min-width: 991.98px)  and (max-width: 1199.98px) {  
+
+
+}
+
+
+@media(min-width: 1199.98px) and (max-width: 1399.98px) { 
+
+
+}

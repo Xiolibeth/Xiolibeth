@@ -1,0 +1,106 @@
+/*aqui dare una limpieza de estilos*/
+*{
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+}
+/*aqui termina mi limpieza de estilos*/
+
+
+/*****************************************/
+
+
+/*******************estilos del body***********/
+
+body{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box; 
+    color: #ffffff;
+    cursor: pointer;
+    background-image: repeating-linear-gradient(275deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(230deg, rgb(31,59,67),hsl(266,74%,56%),hsl(338, 89%, 48%),hsl(50,74%,56%),hsl(122,74%,56%));
+}
+
+/****estilos del porfolio***/
+h1{
+   text-align: center;
+   font-size: 40px;
+   color: aquamarine;
+   margin-top: 50px;
+   font-weight: 100;
+   margin-bottom: 50px;
+   transition: 1s;
+    font-size: 30px;
+    letter-spacing: normal;
+    margin-top: 20px;
+    
+}
+h1:hover{
+
+    letter-spacing: .5em;
+    cursor: pointer;
+}
+.container_principal{
+    width: 100%;
+    max-width: 1200px;
+    height: 70%px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+ .container_principal .cajas_info{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 2px white;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+    margin-left: 35px;
+    margin-bottom: 35px;
+    background:#0ff0f0f0;
+    color: black;
+}
+ .container_principal .cajas_info:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px gainsboro;
+}
+.container_principal .cajas_info img{
+    width: 330px;
+    height: 220px;
+}
+
+.container_principal .cajas_info h2{
+    font-weight: 600;
+}
+
+.container_principal .cajas_info p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container_principal .cajas_info a{
+   font-weight: 900;
+   text-decoration: none;
+
+}
+.container_principal .cajas_info a:hover{
+    color:red;
+}
+
+h3{
+    font-size: 2rem;
+    margin-left :20px; 
+    color: aquamarine;
+}
